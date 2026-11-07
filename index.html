@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Noir & Sage — Contemporary dining where fire meets finesse. An intimate culinary destination shaped by seasonal ingredients and open-flame artistry.">
+  <meta name="theme-color" content="#0a0a0b">
+
+  <title>NOIR & SAGE — Where Fire Meets Finesse | Contemporary Dining</title>
+
+  <!-- Luxury Monogram Favicon (SVG) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0a0c'/%3E%3Cpath d='M18 46V18h6.5l14 19.5V18H45v28h-6.5l-14-19.5V46H18z' fill='%23c5a880'/%3E%3Ccircle cx='48' cy='44' r='3' fill='%23d46539'/%3E%3C/svg%3E">
+
+  <!-- Open Graph & Social Meta -->
+  <meta property="og:title" content="NOIR & SAGE — Where Fire Meets Finesse">
+  <meta property="og:description" content="Contemporary dining shaped by seasonal botanical ingredients, open flame and culinary craft. New Delhi, India.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN for subtle luxury icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glow Canvas/Elements -->
+  <div class="ambient-glow ambient-glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-bottom" aria-hidden="true"></div>
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#home" class="brand-logo" aria-label="Noir and Sage Home">
+        <span class="brand-title">NOIR &amp; SAGE</span>
+        <span class="brand-subtitle">NEW DELHI · EST. 2018</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#story" class="nav-link">Our Story</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#chef" class="nav-link">The Chef</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Reservation Header CTA -->
+      <div class="header-actions">
+        <a href="#reservation" class="btn btn-outline btn-sm nav-reserve-btn">
+          <span>Reserve a Table</span>
+          <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <div class="drawer-content">
+      <div class="drawer-header">
+        <span class="drawer-brand">NOIR &amp; SAGE</span>
+        <button class="drawer-close" id="drawerClose" aria-label="Close Navigation Menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="drawer-links">
+        <li><a href="#home" class="drawer-link">Home</a></li>
+        <li><a href="#story" class="drawer-link">Our Story</a></li>
+        <li><a href="#menu" class="drawer-link">Menu</a></li>
+        <li><a href="#featured-dish" class="drawer-link">The Dish</a></li>
+        <li><a href="#experience" class="drawer-link">Experience</a></li>
+        <li><a href="#gallery" class="drawer-link">Gallery</a></li>
+        <li><a href="#chef" class="drawer-link">The Chef</a></li>
+        <li><a href="#reservation" class="drawer-link">Reserve a Table</a></li>
+        <li><a href="#contact" class="drawer-link">Contact &amp; Hours</a></li>
+      </ul>
+      <div class="drawer-footer">
+        <p class="drawer-tagline">"Where Fire Meets Finesse."</p>
+        <p class="drawer-contact">42 Heritage Avenue, New Delhi<br>+91 98765 43210</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home" aria-label="Welcome to Noir and Sage">
+      <div class="hero-media-wrapper">
+        <img 
+          src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=2000&q=80" 
+          alt="Intimate candlelit dining table at Noir and Sage" 
+          class="hero-bg-img"
+          fetchpriority="high"
+        >
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content-wrapper container">
+        <div class="hero-content">
+          <div class="hero-eyebrow reveal-element">
+            <span class="eyebrow-line"></span>
+            <span class="eyebrow-text">EST. 2018 · CONTEMPORARY DINING</span>
+            <span class="eyebrow-line"></span>
+          </div>
+
+          <h1 class="hero-title reveal-element">
+            WHERE FIRE<br>
+            <span class="italic-serif text-accent">MEETS FINESSE.</span>
+          </h1>
+
+          <p class="hero-description reveal-element">
+            An intimate dining experience shaped by seasonal ingredients, open flame and modern culinary craft.
+          </p>
+
+          <div class="hero-cta-group reveal-element">
+            <a href="#reservation" class="btn btn-primary">
+              <span>Reserve a Table</span>
+              <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+            </a>
+            <a href="#menu" class="btn btn-secondary">
+              <span>Explore the Menu</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <a href="#story" class="hero-scroll-indicator" aria-label="Scroll down to story section">
+          <span class="scroll-label">SCROLL TO EXPLORE</span>
+          <div class="scroll-icon-wrap">
+            <i class="fa-solid fa-arrow-down-long"></i>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- INTRO / RESTAURANT STORY SECTION -->
+    <section class="section story-section" id="story">
+      <div class="container">
+        <div class="story-grid">
+          
+          <!-- Editorial Text Content -->
+          <div class="story-text-col reveal-on-scroll">
+            <div class="section-badge">
+              <span class="badge-dot"></span>
+              <span class="badge-text">THE NOIR &amp; SAGE PHILOSOPHY</span>
+            </div>
+
+            <h2 class="section-title story-heading">
+              "Great food doesn’t<br>
+              <span class="italic-serif">need to shout."</span>
+            </h2>
+
+            <p class="body-lead story-lead">
+              At Noir &amp; Sage, every plate begins with restraint — honest ingredients, deliberate technique and the warmth of an open flame. We create food that feels familiar at first bite, then leaves something unexpected behind.
+            </p>
+
+            <p class="body-secondary story-secondary">
+              Founded on the belief that dining is an art of slow living, our kitchen honors the elemental connection between raw fire and botanical harmony. We forage locally, curate small-batch produce from regenerative farms, and pair each creation with cellar-aged wines and smoked elixirs.
+            </p>
+
+            <!-- Statistics Area -->
+            <div class="story-stats-grid">
+              <div class="stat-card">
+                <span class="stat-number" data-target="8">08+</span>
+                <span class="stat-label">Years of Craft</span>
+              </div>
+              <div class="stat-divider" aria-hidden="true"></div>
+              <div class="stat-card">
+                <span class="stat-number" data-target="42">42</span>
+                <span class="stat-label">Seasonal Dishes</span>
+              </div>
+              <div class="stat-divider" aria-hidden="true"></div>
+              <div class="stat-card">
+                <span class="stat-number" data-target="1">01</span>
+                <span class="stat-label">Unforgettable Table</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Asymmetrical Imagery Layout -->
+          <div class="story-media-col reveal-on-scroll">
+            <div class="story-image-composition">
+              <div class="story-main-image-wrap">
+                <img 
+                  src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80" 
+                  alt="Artisanal contemporary plated culinary dish finished with micro-greens and ember oil" 
+                  class="story-main-img" 
+                  loading="lazy"
+                >
+                <div class="img-frame-accent"></div>
+              </div>
+
+              <!-- Floating Editorial Badge -->
+              <div class="story-floating-card">
+                <div class="floating-card-inner">
+                  <span class="floating-icon"><i class="fa-solid fa-fire-flame-curved"></i></span>
+                  <div class="floating-text">
+                    <span class="floating-title">Open Flame Hearth</span>
+                    <span class="floating-desc">Redefining modern alchemy</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGNATURE MENU SECTION -->
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header text-center reveal-on-scroll">
+          <div class="section-badge center-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">CULINARY ANTHOLOGY</span>
+          </div>
+          <h2 class="section-title">THE SIGNATURES</h2>
+          <p class="section-subtitle">
+            A menu that changes with the rhythm of the season.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="menu-tabs-wrapper reveal-on-scroll">
+          <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+            <button class="menu-tab-btn active" role="tab" aria-selected="true" data-category="starters" id="tab-starters">
+              Starters
+            </button>
+            <button class="menu-tab-btn" role="tab" aria-selected="false" data-category="fire" id="tab-fire">
+              From the Fire
+            </button>
+            <button class="menu-tab-btn" role="tab" aria-selected="false" data-category="mains" id="tab-mains">
+              Mains
+            </button>
+            <button class="menu-tab-btn" role="tab" aria-selected="false" data-category="desserts" id="tab-desserts">
+              Desserts
+            </button>
+            <button class="menu-tab-btn" role="tab" aria-selected="false" data-category="drinks" id="tab-drinks">
+              Drinks
+            </button>
+          </div>
+        </div>
+
+        <!-- Menu Content Display Area -->
+        <div class="menu-display-area" id="menuDisplayArea">
+          
+          <!-- Category: Starters -->
+          <div class="menu-category-panel active" id="panel-starters" role="tabpanel" aria-labelledby="tab-starters">
+            <div class="menu-items-grid">
+              
+              <article class="menu-item">
+                <div class="item-header">
+                  <div class="item-title-wrap">
+                    <h3 class="item-name">Charred Burrata</h3>
+                    <span class="item-dietary-tag" title="Vegetarian">V</span>
+                  </div>
+                  <span class="item-dots" aria-hidden="true"></span>
+                  <span class="item-price">₹595</span>
+                </div>
+                <p class="item-description">Smoked tomato concassé, cold-pressed basil oil, grilled sourdough crisps.</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="item-header">
+                  <div class="item-title-wrap">
+                    <h3 class="item-name">Fire-Roasted Cauliflower</h3>
+                    <span class="item-dietary-tag" title="Vegetarian / Nut-infused">V</span>
+                  </div>
+                  <span class="item-dots" aria-hidden="true"></span>
+                  <span class="item-price">₹525</span>
+                </div>
+                <p class="item-description">Foaming brown butter, toasted Piedmont hazelnut, preserved lemon emulsion.</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="item-header">
+                  <div class="item-title-wrap">
+                    <h3 class="item-name">Smoked Bone Marrow</h3>
+                    <span class="item-dietary-tag special" title="Chef's Pick">Chef's Pick</span>
+                  </div>
+                  <span class="item-dots" aria-hidden="true"></span>
+                  <span class="item-price">₹680</span>
+                </div>
+                <p class="item-description">Fermented black garlic crostini, salted caper relish, flat-leaf herb salad.</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="item-header">
+                  <div class="item-title-wrap">
+                    <h3 class="item-name">Cured Kingfish Crudo</h3>
+                    <span class="item-dietary-tag" title="Gluten-free">GF</span>
+                  </div>
+                  <span class="item-dots" aria-hidden="true"></span>
+                  <span class="item-price">₹650</span>
+                </div>
+                <p class="item-description">Ruby blood orange, smoked olive oil, Australian finger lime pearls, sea salt.</p>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- Category: From the Fire -->
+          <div class="menu-category-panel" id="panel-fire" role="tabpanel" aria-labelledby="tab-fire">
+            <div class="menu-items-grid">
+              
+              <article class="menu-item highlighted-item">
+                <div class="item-header">
+                  <div class="item-title-wrap">
+                    <h3 class="item-name">Ember-Roasted Heritage Vegetables</h3>
+                    <span class="item-dietary-tag special" title="Signature Dish">Signature</span>
+                  </div>
+                  <span class="item-dots" aria-hidden="true"></span>
+                  <span class="item-price">₹695</span>
+                </div>
+                <p class="item-description">Seasonal roots kissed by open flame, finished with smoked herb oil and fermented black garlic.</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="item-header">
+                  <div class="item-title-wrap">
+                    <h3 class="item-name">Wood-Fired Black Angus Strip</h3>
+                  </div>
+                  <span class="item-dots" aria-hidden="true"></span>
+                  <span class="item-price">₹1,450</span>
+                </div>
+                <p class="item-description">Charred spring shallots, 48-hour bone marrow reduction, pan-seared wild morels.</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="item-header">
+                  <div class="item-title-wrap">
+                    <h3 class="item-name">Charcoal-Grilled Sea Bass</h3>
+                    <span class="item-dietary-tag" title="Gluten-free">GF</span>
+                  </div>
+                  <span class="item-dots" aria-hidden="true"></span>
+                  <span class="item-price">₹1,150</span>
+                </div>
+                <p class="item-description">Wild fennel pollen, charred Amalfi lemon emulsion, crisp coastal sea purslane.</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="item-header">
+                  <div class="item-title-wrap">
+                    <h3 class="item-name">Fire-Charred Lamb Rump</h3>
+                  </div>
+                  <span class="item-dots" aria-hidden="true"></span>
+                  <span class="item-price">₹1,290</span>
+                </div>
+                <p class="item-description">Smoked aubergine velvet, confit garlic cloves, wild mint and tart pomegranate jus.</p>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- Category: Mains -->
+          <div class="menu-category-panel" id="panel-mains" role="tabpanel" aria-labelledby="tab-mains">
+            <div class="menu-items-grid">
+              
+              <article class="menu-item">
+                <div class="item-header">
+                  <div class="item-title-wrap">
+                    <h3 class="item-name">Truffle Mushroom Risotto</h3>
+                    <span class="item-dietary-tag" title="Vegetarian">V</span>
+                  </div>
+                  <span class="item-dots" aria-hidden="true"></span>
+                  <span class="item-price">₹745</span>
+                </div>
+                <p class="item-description">Wild forest mushrooms, 30-month Parmigiano-Reggiano, garden thyme, white truffle drizzle.</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="item-header">
+                  <div class="item-title-wrap">
+                    <h3 class="item-name">Black Garlic Ravioli</h3>
+                    <span class="item-dietary-tag" title="Vegetarian">V</span>
+                  </div>
+                  <span class="item-dots" aria-hidden="true"></span>
+                  <span class="item-price">₹795</span>
+                </div>
+                <p class="item-description">Fire-roasted pumpkin filling, crispy garden sage, aged parmesan foam, brown butter crumbs.</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="item-header">
+                  <div class="item-title-wrap">
+                    <h3 class="item-name">Slow-Roasted Duck Breast</h3>
+                  </div>
+                  <span class="item-dots" aria-hidden="true"></span>
+                  <span class="item-price">₹1,120</span>
+                </div>
+                <p class="item-description">Charred red chicory, sour Morello cherry glaze, silky roasted parsnip purée.</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="item-header">
+                  <div class="item-title-wrap">
+                    <h3 class="item-name">Braised Pork Belly</h3>
+                  </div>
+                  <span class="item-dots" aria-hidden="true"></span>
+                  <span class="item-price">₹980</span>
+                </div>
+                <p class="item-description">Ember-smoked heirloom apple reduction, puffed crackling, charred Savoy cabbage heart.</p>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- Category: Desserts -->
+          <div class="menu-category-panel" id="panel-desserts" role="tabpanel" aria-labelledby="tab-desserts">
+            <div class="menu-items-grid">
+              
+              <article class="menu-item">
+                <div class="item-header">
+                  <div class="item-title-wrap">
+                    <h3 class="item-name">Dark Chocolate Torte</h3>
+                    <span class="item-dietary-tag special" title="Signature Dessert">Signature</span>
+                  </div>
+                  <span class="item-dots" aria-hidden="true"></span>
+                  <span class="item-price">₹495</span>
+                </div>
+                <p class="item-description">Flaky Maldon sea salt, single-origin espresso cream, Valrhona 72% dark cocoa sponge.</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="item-header">
+                  <div class="item-title-wrap">
+                    <h3 class="item-name">Smoked Fig &amp; Almond Tart</h3>
+                    <span class="item-dietary-tag" title="Vegetarian">V</span>
+                  </div>
+                  <span class="item-dots" aria-hidden="true"></span>
+                  <span class="item-price">₹480</span>
+                </div>
+                <p class="item-description">Burnt forest honey gelato, roasted Marcona almond frangipane, candied wild thyme crisp.</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="item-header">
+                  <div class="item-title-wrap">
+                    <h3 class="item-name">Charred Citrus Pavlova</h3>
+                    <span class="item-dietary-tag" title="Gluten-free">GF</span>
+                  </div>
+                  <span class="item-dots" aria-hidden="true"></span>
+                  <span class="item-price">₹450</span>
+                </div>
+                <p class="item-description">Lemon myrtle curd, blood orange sorbet, gently torched French meringue, mint crystals.</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="item-header">
+                  <div class="item-title-wrap">
+                    <h3 class="item-name">Artisan Cheese Board</h3>
+                  </div>
+                  <span class="item-dots" aria-hidden="true"></span>
+                  <span class="item-price">₹650</span>
+                </div>
+                <p class="item-description">Selection of three aged cheeses, truffle honeycomb, charcoal lavash, spiced pear chutney.</p>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- Category: Drinks -->
+          <div class="menu-category-panel" id="panel-drinks" role="tabpanel" aria-labelledby="tab-drinks">
+            <div class="menu-items-grid">
+              
+              <article class="menu-item">
+                <div class="item-header">
+                  <div class="item-title-wrap">
+                    <h3 class="item-name">Ember &amp; Smoke</h3>
+                    <span class="item-dietary-tag special" title="Signature Cocktail">Signature</span>
+                  </div>
+                  <span class="item-dots" aria-hidden="true"></span>
+                  <span class="item-price">₹650</span>
+                </div>
+                <p class="item-description">Oaxacan Mezcal, flame-torched rosemary sprig, blood orange cordial, smoked organic agave.</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="item-header">
+                  <div class="item-title-wrap">
+                    <h3 class="item-name">The Sage Velvet</h3>
+                  </div>
+                  <span class="item-dots" aria-hidden="true"></span>
+                  <span class="item-price">₹620</span>
+                </div>
+                <p class="item-description">Botanical dry gin, hand-muddled fresh garden sage, St. Germain elderflower, clarified lemon.</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="item-header">
+                  <div class="item-title-wrap">
+                    <h3 class="item-name">Noir Reserve Old Fashioned</h3>
+                  </div>
+                  <span class="item-dots" aria-hidden="true"></span>
+                  <span class="item-price">₹690</span>
+                </div>
+                <p class="item-description">Small-batch Kentucky bourbon, roasted walnut bitters, ember-caramelized demerara sugar cube.</p>
+              </article>
+
+              <article class="menu-item">
+                <div class="item-header">
+                  <div class="item-title-wrap">
+                    <h3 class="item-name">Smoked Blackberry Shrub</h3>
+                    <span class="item-dietary-tag" title="Zero Alcohol">0.0% ABV</span>
+                  </div>
+                  <span class="item-dots" aria-hidden="true"></span>
+                  <span class="item-price">₹380</span>
+                </div>
+                <p class="item-description">Wild muddled blackberries, charred sprig of thyme, raw apple cider shrub, craft Indian tonic.</p>
+              </article>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Menu Note -->
+        <div class="menu-footer-note text-center">
+          <p class="note-text">
+            All prices are in Indian Rupees (₹). Subject to applicable government taxes and a discretionary 10% service charge.
+          </p>
+          <a href="#reservation" class="menu-reserve-link">
+            <span>Reserve your tasting experience</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FEATURED DISH PARALLAX SECTION -->
+    <section class="featured-dish-section" id="featured-dish" aria-label="Featured Signature Dish">
+      <div class="featured-bg-wrapper">
+        <img 
+          src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=2000&q=80" 
+          alt="Ember-Roasted Heritage Vegetables plated over artisanal ceramic" 
+          class="featured-bg-img"
+          id="featuredParallaxImg"
+          loading="lazy"
+        >
+        <div class="featured-overlay"></div>
+      </div>
+
+      <div class="container featured-container">
+        <div class="featured-content-card reveal-on-scroll">
+          <div class="section-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">THE DISH</span>
+          </div>
+
+          <h2 class="featured-title">
+            Ember-Roasted<br>
+            <span class="italic-serif text-accent">Heritage Vegetables</span>
+          </h2>
+
+          <p class="featured-quote">
+            "Seasonal vegetables kissed by open flame, finished with smoked herb oil and fermented garlic."
+          </p>
+
+          <div class="featured-details">
+            <div class="featured-price-tag">
+              <span class="price-accent">Chef's Signature</span>
+              <span class="price-separator">·</span>
+              <span class="price-val">₹695</span>
+            </div>
+            
+            <a href="#reservation" class="btn btn-outline btn-sm">
+              <span>Reserve a Table</span>
+              <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DINING EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-on-scroll">
+          <div class="section-badge center-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">SPACES &amp; ATMOSPHERES</span>
+          </div>
+          <h2 class="section-title">THE DINING EXPERIENCE</h2>
+          <p class="section-subtitle">
+            Three distinct perspectives on contemporary gastronomy.
+          </p>
+        </div>
+
+        <div class="experience-grid">
+          
+          <!-- Experience Card 1 -->
+          <article class="experience-card reveal-on-scroll">
+            <div class="exp-media">
+              <img 
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" 
+                alt="Intimate atmosphere in The Dining Room" 
+                class="exp-img" 
+                loading="lazy"
+              >
+              <div class="exp-overlay"></div>
+            </div>
+            <div class="exp-content">
+              <span class="exp-number">01</span>
+              <h3 class="exp-title">The Dining Room</h3>
+              <p class="exp-desc">
+                An intimate space designed for long conversations and slow evenings.
+              </p>
+              <ul class="exp-features">
+                <li><i class="fa-solid fa-check"></i> Low ambient acoustics &amp; warm lighting</li>
+                <li><i class="fa-solid fa-check"></i> Full à la carte and seasonal tasting</li>
+              </ul>
+              <a href="#reservation" class="exp-cta">
+                <span>Book this space</span>
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Experience Card 2 -->
+          <article class="experience-card reveal-on-scroll">
+            <div class="exp-media">
+              <img 
+                src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1200&q=80" 
+                alt="Chefs in action along the Chef's Counter" 
+                class="exp-img" 
+                loading="lazy"
+              >
+              <div class="exp-overlay"></div>
+            </div>
+            <div class="exp-content">
+              <span class="exp-number">02</span>
+              <h3 class="exp-title">Chef's Counter</h3>
+              <p class="exp-desc">
+                Watch the kitchen unfold from the closest seat in the house.
+              </p>
+              <ul class="exp-features">
+                <li><i class="fa-solid fa-check"></i> 8 coveted seats facing the open fire</li>
+                <li><i class="fa-solid fa-check"></i> 7-course curated pairing narrative</li>
+              </ul>
+              <a href="#reservation" class="exp-cta">
+                <span>Reserve counter seat</span>
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Experience Card 3 -->
+          <article class="experience-card reveal-on-scroll">
+            <div class="exp-media">
+              <img 
+                src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&w=1200&q=80" 
+                alt="Secluded elegance inside the Private Dining Room" 
+                class="exp-img" 
+                loading="lazy"
+              >
+              <div class="exp-overlay"></div>
+            </div>
+            <div class="exp-content">
+              <span class="exp-number">03</span>
+              <h3 class="exp-title">Private Dining</h3>
+              <p class="exp-desc">
+                A private setting for celebrations, gatherings and unforgettable evenings.
+              </p>
+              <ul class="exp-features">
+                <li><i class="fa-solid fa-check"></i> Accommodates up to 14 guests</li>
+                <li><i class="fa-solid fa-check"></i> Bespoke sommelier &amp; custom menus</li>
+              </ul>
+              <a href="#reservation" class="exp-cta">
+                <span>Inquire for private</span>
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- IMAGE GALLERY & LIGHTBOX SECTION -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-on-scroll">
+          <div class="section-badge center-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">VISUAL CHRONICLE</span>
+          </div>
+          <h2 class="section-title">THE NOIR GALLERY</h2>
+          <p class="section-subtitle">
+            Moments captured in smoke, wood, crystal, and plate.
+          </p>
+        </div>
+
+        <!-- Masonry Grid with 8 curated Unsplash photos -->
+        <div class="gallery-grid" id="galleryGrid">
+          
+          <figure class="gallery-item item-large reveal-on-scroll" data-index="0" data-src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1600&q=80" data-caption="Signature Seasonal Dish — Delicate herb dressing and heirloom botanical salad">
+            <img 
+              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" 
+              alt="Artfully plated seasonal dish with heirloom vegetables and edible flowers" 
+              class="gallery-thumb" 
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Plating</span>
+              <h4 class="gallery-caption">Seasonal Gastronomy</h4>
+              <span class="gallery-icon"><i class="fa-solid fa-expand"></i></span>
+            </div>
+          </figure>
+
+          <figure class="gallery-item item-tall reveal-on-scroll" data-index="1" data-src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1600&q=80" data-caption="The Living Hearth — Open flame wood-grill technique in service">
+            <img 
+              src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" 
+              alt="Chef grilling cuts over open roaring wood fire" 
+              class="gallery-thumb" 
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Hearth</span>
+              <h4 class="gallery-caption">Fire Craft</h4>
+              <span class="gallery-icon"><i class="fa-solid fa-expand"></i></span>
+            </div>
+          </figure>
+
+          <figure class="gallery-item item-wide reveal-on-scroll" data-index="2" data-src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1600&q=80" data-caption="The Cellar — Sommelier selection poured into mouth-blown crystal glassware">
+            <img 
+              src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80" 
+              alt="Rich vintage red wine pouring into crystal goblet" 
+              class="gallery-thumb" 
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Cellar</span>
+              <h4 class="gallery-caption">Vintage Pour</h4>
+              <span class="gallery-icon"><i class="fa-solid fa-expand"></i></span>
+            </div>
+          </figure>
+
+          <figure class="gallery-item reveal-on-scroll" data-index="3" data-src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1600&q=80" data-caption="Architectural Serenity — Minimalist charcoal aesthetics and warm shadow play">
+            <img 
+              src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80" 
+              alt="Dark restaurant dining room with sleek minimal lighting and warm timber" 
+              class="gallery-thumb" 
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Interior</span>
+              <h4 class="gallery-caption">Shadow &amp; Light</h4>
+              <span class="gallery-icon"><i class="fa-solid fa-expand"></i></span>
+            </div>
+          </figure>
+
+          <figure class="gallery-item reveal-on-scroll" data-index="4" data-src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1600&q=80" data-caption="Dark Chocolate Torte — Valrhona cacao, espresso cream, Maldon sea salt">
+            <img 
+              src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80" 
+              alt="Artisanal dark chocolate dessert styled on stone surface" 
+              class="gallery-thumb" 
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Dessert</span>
+              <h4 class="gallery-caption">Valrhona Torte</h4>
+              <span class="gallery-icon"><i class="fa-solid fa-expand"></i></span>
+            </div>
+          </figure>
+
+          <figure class="gallery-item item-tall reveal-on-scroll" data-index="5" data-src="https://images.unsplash.com/photo-1505275350441-83dcda8eeef5?auto=format&fit=crop&w=1600&q=80" data-caption="Evening Table Setting — Hand-spun charcoal linen, matte cutlery, candlelight">
+            <img 
+              src="https://images.unsplash.com/photo-1505275350441-83dcda8eeef5?auto=format&fit=crop&w=800&q=80" 
+              alt="Refined table arrangement with linen napkin and wine glass" 
+              class="gallery-thumb" 
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Setting</span>
+              <h4 class="gallery-caption">Table Ritual</h4>
+              <span class="gallery-icon"><i class="fa-solid fa-expand"></i></span>
+            </div>
+          </figure>
+
+          <figure class="gallery-item reveal-on-scroll" data-index="6" data-src="https://images.unsplash.com/photo-1607532941433-304659e8198a?auto=format&fit=crop&w=1600&q=80" data-caption="Botanical Foraging — Organic fresh herbs, sage, and wild mountain mushrooms">
+            <img 
+              src="https://images.unsplash.com/photo-1607532941433-304659e8198a?auto=format&fit=crop&w=800&q=80" 
+              alt="Fresh wild mushrooms and culinary sage leaves" 
+              class="gallery-thumb" 
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Ingredients</span>
+              <h4 class="gallery-caption">Botanical Sage</h4>
+              <span class="gallery-icon"><i class="fa-solid fa-expand"></i></span>
+            </div>
+          </figure>
+
+          <figure class="gallery-item item-wide reveal-on-scroll" data-index="7" data-src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=1600&q=80" data-caption="Smoked Alchemy — Mezcal and charred rosemary cocktail served over rock crystal ice">
+            <img 
+              src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=800&q=80" 
+              alt="Smoked cocktail glass with rising aroma smoke" 
+              class="gallery-thumb" 
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Cocktails</span>
+              <h4 class="gallery-caption">Ember &amp; Smoke</h4>
+              <span class="gallery-icon"><i class="fa-solid fa-expand"></i></span>
+            </div>
+          </figure>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FULLSCREEN GALLERY LIGHTBOX MODAL -->
+    <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Image Preview" aria-hidden="true">
+      <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+      
+      <div class="lightbox-dialog">
+        <!-- Close Button -->
+        <button class="lightbox-btn lightbox-close" id="lightboxClose" aria-label="Close image lightbox">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- Previous Button -->
+        <button class="lightbox-btn lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <!-- Main Lightbox Image & Caption -->
+        <div class="lightbox-stage">
+          <div class="lightbox-image-container">
+            <img src="" alt="" class="lightbox-img" id="lightboxImg">
+            <div class="lightbox-spinner" id="lightboxSpinner"></div>
+          </div>
+          <div class="lightbox-info-bar">
+            <p class="lightbox-caption" id="lightboxCaption"></p>
+            <div class="lightbox-counter" id="lightboxCounter">1 / 8</div>
+          </div>
+        </div>
+
+        <!-- Next Button -->
+        <button class="lightbox-btn lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- CHEF SECTION -->
+    <section class="section chef-section" id="chef">
+      <div class="container">
+        <div class="chef-grid">
+          
+          <!-- Chef Portrait -->
+          <div class="chef-media-col reveal-on-scroll">
+            <div class="chef-image-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1200&q=80" 
+                alt="Portrait of Chef Arjun Mehra inside the Noir and Sage kitchen" 
+                class="chef-img" 
+                loading="lazy"
+              >
+              <div class="chef-accent-frame"></div>
+              <div class="chef-tag-badge">
+                <span>Executive Chef &amp; Co-Founder</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chef Editorial Profile -->
+          <div class="chef-text-col reveal-on-scroll">
+            <div class="section-badge">
+              <span class="badge-dot"></span>
+              <span class="badge-text">THE HAND BEHIND THE PLATE</span>
+            </div>
+
+            <h2 class="section-title chef-name">ARJUN MEHRA</h2>
+
+            <p class="body-lead chef-quote">
+              "Chef Arjun approaches contemporary dining with one principle: complexity should never come at the expense of comfort."
+            </p>
+
+            <div class="chef-bio">
+              <p>
+                Trained across celebrated kitchens in San Sebastián, Kyoto, and Copenhagen, Arjun returned to India driven by a single desire: to strip away culinary pretense and celebrate the raw, primal essence of firewood and time.
+              </p>
+              <p>
+                At Noir &amp; Sage, there are no artificial shortcuts. Sauces simmer over residual coals for sixteen hours; sea bass is seared over fragrant oak wood; and wild sage is harvested daily. Every dish honors the delicate balance between restraint and sensory impact.
+              </p>
+            </div>
+
+            <div class="chef-signature-wrap">
+              <span class="signature-quote">"Cook with instinct. Finish with intention."</span>
+              <span class="signature-sign">Arjun Mehra</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="section testimonial-section" id="testimonials">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-on-scroll">
+          <div class="section-badge center-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">ACCOLADES &amp; IMPRESSIONS</span>
+          </div>
+        </div>
+
+        <div class="testimonial-slider-wrapper reveal-on-scroll">
+          <div class="testimonial-slides" id="testimonialSlides">
+            
+            <!-- Slide 1 -->
+            <div class="testimonial-slide active" data-slide="0">
+              <div class="quote-mark" aria-hidden="true">“</div>
+              <blockquote class="testimonial-quote">
+                One of those rare restaurants where every detail feels intentional.
+              </blockquote>
+              <div class="testimonial-author">
+                <span class="author-name">— Rhea Kapoor</span>
+                <span class="author-title">Food &amp; Culture Writer</span>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-slide" data-slide="1">
+              <div class="quote-mark" aria-hidden="true">“</div>
+              <blockquote class="testimonial-quote">
+                The open fire adds an elemental soul to culinary precision. Noir &amp; Sage defines modern dining with quiet authority.
+              </blockquote>
+              <div class="testimonial-author">
+                <span class="author-name">— Vikram Sethi</span>
+                <span class="author-title">Senior Critic, Epicurean Review</span>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-slide" data-slide="2">
+              <div class="quote-mark" aria-hidden="true">“</div>
+              <blockquote class="testimonial-quote">
+                An unforgettable evening. The harmony of smoke, delicate botanical acid, and charred crust lingers long after the final course.
+              </blockquote>
+              <div class="testimonial-author">
+                <span class="author-name">— Elena Rostova</span>
+                <span class="author-title">Gastronomy Columnist, The Continental Table</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Slider Controls -->
+          <div class="slider-controls">
+            <button class="slider-arrow slider-prev" id="testiPrev" aria-label="Previous testimonial">
+              <i class="fa-solid fa-arrow-left-long"></i>
+            </button>
+            <div class="slider-dots" id="testiDots">
+              <button class="slider-dot active" data-slide="0" aria-label="Go to testimonial 1"></button>
+              <button class="slider-dot" data-slide="1" aria-label="Go to testimonial 2"></button>
+              <button class="slider-dot" data-slide="2" aria-label="Go to testimonial 3"></button>
+            </div>
+            <button class="slider-arrow slider-next" id="testiNext" aria-label="Next testimonial">
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESERVATION SECTION -->
+    <section class="section reservation-section" id="reservation">
+      <div class="container">
+        
+        <div class="reservation-card reveal-on-scroll">
+          <div class="reservation-grid">
+            
+            <!-- Reservation Info Col -->
+            <div class="reservation-info-col">
+              <div class="section-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-text">TABLE BOOKING</span>
+              </div>
+
+              <h2 class="reservation-heading">
+                YOUR TABLE<br>
+                <span class="italic-serif text-accent">AWAITS.</span>
+              </h2>
+
+              <p class="reservation-lead">
+                "Make an evening of it."
+              </p>
+
+              <p class="reservation-body">
+                We accept bookings up to 30 days in advance. For parties exceeding 8 guests or private dining buyouts, our concierge team will be delighted to assist personally.
+              </p>
+
+              <div class="reservation-policy-highlights">
+                <div class="policy-item">
+                  <i class="fa-regular fa-clock"></i>
+                  <div>
+                    <strong>Dining Duration</strong>
+                    <span>2 hours reserved per table</span>
+                  </div>
+                </div>
+                <div class="policy-item">
+                  <i class="fa-solid fa-shirt"></i>
+                  <div>
+                    <strong>Dress Code</strong>
+                    <span>Smart casual &amp; evening wear</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="direct-concierge">
+                <span class="concierge-label">Direct Concierge</span>
+                <a href="tel:+919876543210" class="concierge-link">+91 98765 43210</a>
+              </div>
+            </div>
+
+            <!-- Reservation Form Col -->
+            <div class="reservation-form-col">
+              
+              <!-- Form Success State (Hidden by default, shown by JS on valid submit) -->
+              <div class="form-success-message" id="reservationSuccess" aria-live="polite">
+                <div class="success-icon-wrap">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <h3 class="success-title">Your table has been reserved.</h3>
+                <p class="success-body">
+                  "Your reservation request has been received. We look forward to welcoming you."
+                </p>
+                <div class="success-details" id="successDetailsSummary"></div>
+                <button type="button" class="btn btn-outline btn-sm" id="newReservationBtn">
+                  <span>Make Another Reservation</span>
+                </button>
+              </div>
+
+              <!-- Main Reservation Form -->
+              <form class="reservation-form" id="reservationForm" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="resName" class="form-label">Full Name <span class="required">*</span></label>
+                    <input type="text" id="resName" name="name" class="form-input" placeholder="e.g. Vikram Malhotra" required autocomplete="name">
+                    <span class="field-error" id="nameError"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="resEmail" class="form-label">Email Address <span class="required">*</span></label>
+                    <input type="email" id="resEmail" name="email" class="form-input" placeholder="e.g. name@domain.com" required autocomplete="email">
+                    <span class="field-error" id="emailError"></span>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="resPhone" class="form-label">Phone Number <span class="required">*</span></label>
+                    <input type="tel" id="resPhone" name="phone" class="form-input" placeholder="+91 98765 43210" required autocomplete="tel">
+                    <span class="field-error" id="phoneError"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="resGuests" class="form-label">Number of Guests <span class="required">*</span></label>
+                    <select id="resGuests" name="guests" class="form-select" required>
+                      <option value="1">1 Guest · Counter or Table</option>
+                      <option value="2" selected>2 Guests · Intimate Table</option>
+                      <option value="3">3 Guests</option>
+                      <option value="4">4 Guests · Standard Booth</option>
+                      <option value="5">5 Guests</option>
+                      <option value="6">6 Guests · Family Table</option>
+                      <option value="7">7 Guests</option>
+                      <option value="8">8 Guests · Large Party</option>
+                    </select>
+                    <span class="field-error" id="guestsError"></span>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="resDate" class="form-label">Date <span class="required">*</span></label>
+                    <input type="date" id="resDate" name="date" class="form-input" required>
+                    <span class="field-error" id="dateError"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="resTime" class="form-label">Preferred Time <span class="required">*</span></label>
+                    <select id="resTime" name="time" class="form-select" required>
+                      <option value="" disabled selected>Select dining seating</option>
+                      <optgroup label="Lunch Service">
+                        <option value="12:30 PM">12:30 PM</option>
+                        <option value="01:30 PM">01:30 PM</option>
+                        <option value="02:30 PM">02:30 PM</option>
+                      </optgroup>
+                      <optgroup label="Dinner Service">
+                        <option value="07:00 PM">07:00 PM</option>
+                        <option value="08:00 PM">08:00 PM</option>
+                        <option value="08:45 PM">08:45 PM</option>
+                        <option value="09:30 PM">09:30 PM</option>
+                        <option value="10:15 PM">10:15 PM</option>
+                      </optgroup>
+                    </select>
+                    <span class="field-error" id="timeError"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="resSeating" class="form-label">Atmosphere Preference</label>
+                  <select id="resSeating" name="seating" class="form-select">
+                    <option value="Dining Room">The Dining Room (Intimate &amp; Subtle)</option>
+                    <option value="Chef Counter">Chef's Counter (Hearth Front Seat)</option>
+                    <option value="Private Dining">Private Dining Room (Celebrations)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="resNotes" class="form-label">Special Requests or Dietary Requirements</label>
+                  <textarea id="resNotes" name="notes" class="form-textarea" rows="3" placeholder="Allergies, anniversaries, wine pairing inquiries..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block submit-btn" id="submitResBtn">
+                  <span>REQUEST RESERVATION</span>
+                  <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+                </button>
+
+                <p class="form-disclaimer">
+                  No advance deposit required. We will confirm your reservation via SMS and email within 1 hour.
+                </p>
+              </form>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LOCATION / CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-on-scroll">
+          <div class="section-badge center-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">VISIT US</span>
+          </div>
+          <h2 class="section-title">FIND OUR HEARTH</h2>
+          <p class="section-subtitle">
+            Located in the serene diplomatic quarter of New Delhi.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Details Column -->
+          <div class="contact-card reveal-on-scroll">
+            
+            <div class="contact-block">
+              <span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div class="contact-info">
+                <h3 class="contact-block-title">The Address</h3>
+                <address class="contact-address">
+                  NOIR &amp; SAGE<br>
+                  42 Heritage Avenue<br>
+                  New Delhi, 110001, India
+                </address>
+                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="contact-link">
+                  <span>Open in Google Maps</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-block">
+              <span class="contact-icon"><i class="fa-solid fa-clock"></i></span>
+              <div class="contact-info">
+                <h3 class="contact-block-title">Opening Hours</h3>
+                <div class="hours-list">
+                  <div class="hour-row">
+                    <span class="day">Monday — Thursday</span>
+                    <span class="time">12:00 PM — 11:00 PM</span>
+                  </div>
+                  <div class="hour-row highlight-row">
+                    <span class="day">Friday — Sunday</span>
+                    <span class="time">12:00 PM — 12:00 AM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-block">
+              <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+              <div class="contact-info">
+                <h3 class="contact-block-title">Direct Inquiries</h3>
+                <p class="contact-entry">
+                  Reservations &amp; Enquiries: <a href="tel:+919876543210">+91 98765 43210</a>
+                </p>
+                <p class="contact-entry">
+                  General &amp; Press: <a href="mailto:hello@noirandsage.com">hello@noirandsage.com</a>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Minimalist Map Visual Representation -->
+          <div class="map-aesthetic-card reveal-on-scroll">
+            <div class="map-visual-wrapper">
+              
+              <!-- Subtle Architectural Stylized Vector Map Graphic -->
+              <svg class="map-svg" viewBox="0 0 600 450" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="mapGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#141416" />
+                    <stop offset="100%" stop-color="#0a0a0c" />
+                  </linearGradient>
+                  <radialGradient id="pinGlow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#c5a880" stop-opacity="0.4" />
+                    <stop offset="100%" stop-color="#c5a880" stop-opacity="0" />
+                  </radialGradient>
+                </defs>
+
+                <!-- Map Background -->
+                <rect width="600" height="450" fill="url(#mapGradient)" />
+
+                <!-- Stylized City Roads/Grid -->
+                <g stroke="#26262b" stroke-width="2" opacity="0.6">
+                  <path d="M0,80 Q250,90 600,60" fill="none" />
+                  <path d="M0,180 L600,160" fill="none" />
+                  <path d="M0,280 Q300,310 600,260" fill="none" />
+                  <path d="M0,380 L600,390" fill="none" />
+                  
+                  <path d="M120,0 L100,450" fill="none" />
+                  <path d="M260,0 Q290,200 270,450" fill="none" />
+                  <path d="M420,0 L440,450" fill="none" />
+                  <path d="M540,0 L520,450" fill="none" />
+                </g>
+
+                <!-- Major Avenue Accent -->
+                <path d="M60,450 Q300,250 560,0" stroke="#c5a880" stroke-width="2.5" stroke-opacity="0.25" fill="none" />
+                <path d="M0,240 Q280,240 600,220" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.1" fill="none" />
+
+                <!-- Heritage Quarter Park Outline -->
+                <polygon points="180,120 380,140 350,260 160,230" fill="#1b1c19" stroke="#33372c" stroke-width="1" opacity="0.7" />
+                <text x="230" y="190" fill="#6d735f" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" letter-spacing="2">HERITAGE GARDENS</text>
+
+                <!-- Restaurant Pin Pulse -->
+                <circle cx="300" cy="225" r="48" fill="url(#pinGlow)" />
+                <circle cx="300" cy="225" r="14" fill="#c5a880" fill-opacity="0.2" stroke="#c5a880" stroke-width="1" />
+                <circle cx="300" cy="225" r="5" fill="#c5a880" />
+              </svg>
+
+              <!-- Map Overlay Card -->
+              <div class="map-overlay-badge">
+                <div class="badge-dot-live"></div>
+                <div class="badge-text-group">
+                  <span class="badge-title">NOIR &amp; SAGE</span>
+                  <span class="badge-sub">42 Heritage Avenue · Valet Available</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <!-- Top Row: Brand & Tagline -->
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="#home" class="footer-logo">NOIR &amp; SAGE</a>
+          <p class="footer-tagline">"Where Fire Meets Finesse."</p>
+          <p class="footer-summary">
+            A celebration of seasonal botanical ingredients, ancient hearth cooking, and modern culinary design.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#menu">Signatures</a></li>
+            <li><a href="#experience">Experiences</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reservation">Reserve a Table</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-info-col">
+          <h4 class="footer-col-title">Hours &amp; Location</h4>
+          <p class="footer-addr">42 Heritage Avenue<br>New Delhi, India</p>
+          <p class="footer-hours">Daily: 12:00 PM — Late</p>
+          <p class="footer-phone"><a href="tel:+919876543210">+91 98765 43210</a></p>
+        </div>
+
+        <div class="footer-social-col">
+          <h4 class="footer-col-title">Connect</h4>
+          <div class="social-icon-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Noir and Sage Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Noir and Sage Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Noir and Sage Pinterest">
+              <i class="fa-brands fa-pinterest-p"></i>
+            </a>
+          </div>
+          <span class="social-note">Follow for seasonal tasting releases</span>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div class="footer-copyright">
+          © 2026 Noir &amp; Sage. All rights reserved.
+        </div>
+
+        <!-- Designer Credit specified by User: Rajinderjit Kaur -->
+        <div class="footer-creator">
+          Crafted &amp; Designed by <span class="creator-highlight">Rajinderjit Kaur</span>
+        </div>
+
+        <div class="footer-legal">
+          <a href="#privacy">Privacy Policy</a>
+          <span class="sep">·</span>
+          <a href="#terms">Terms of Dining</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating Back-to-Top Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Return to top of page">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
+
